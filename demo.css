@@ -1,9 +1,9 @@
 header {
     background: url(images/central_park.jpg) 0 -200px no-repeat;  /* place image as background */
-    background-size: 1500px;
+    background-size: cover;
     /*background-position: 0 -200px;*/
     /*background-repeat: no-repeat;*/
-    height: 400px; /* give header some height to display the background image */
+    height: 600px; /* give header some height to display the background image */
     padding-top: 100px;
     padding-left: 100px;
     font-weight: bold;
@@ -49,3 +49,26 @@ header {
     padding-top: 20px;
     color:rgb(211, 218, 240);
   }
+
+  @media (max-width: 599px) {
+    .cards .card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+  header {
+      height: 250px; 
+      padding-top: 50px;
+      padding-left: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+      height: 150px;
+      padding-top: 25px;
+      padding-left: 25px;
+  }
+}
